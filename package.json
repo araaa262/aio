@@ -1,0 +1,24 @@
+{
+  "name": "aio-felicia-v9",
+  "version": "9.0.0",
+  "private": true,
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "atob": "^2.1.2",
+    "axios": "^1.12.2",
+    "cheerio": "^1.1.2",
+    "cloudscraper": "^1.2.71",
+    "express": "^4.21.2",
+    "file-type": "^16.5.4",
+    "form-data": "^4.0.4",
+    "fs-extra": "^11.3.1",
+    "node-fetch": "^2.7.0",
+    "ws": "^8.18.0"
+  }
+}

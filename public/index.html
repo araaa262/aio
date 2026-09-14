@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#07080b">
+  <meta name="description" content="AIO FELICIA — unduh video, foto, audio, dan file dari satu halaman.">
+  <title>AIO FELICIA — Download</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  
+
+  <header class="topbar">
+    <a class="brand" href="#downloader" aria-label="Beranda AIO FELICIA">
+      <span class="brand-mark"><img src="https://cdn.jsdelivr.net/gh/IkyyEzzXD/IkyyGantengPoll@main/uploads/1789397191149_file_3558.jpg" alt="AIO FELICIA"></span>
+      <span class="brand-text"><b>AIO</b><span>FELICIA</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navigasi utama">
+      <a class="nav-pill active" href="#downloader" >Unduh</a>
+      <a class="nav-pill" href="#supported" >Platform</a>
+      <a class="nav-pill" href="#telegram">Telegram</a>
+      <a class="nav-pill" href="#history" >Riwayat</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Buka menu"><i></i><i></i><i></i></button>
+  </header>
+
+  <main id="downloader">
+    <section class="hero">
+      <div class="hero-copy-wrap">
+        <div class="eyebrow"><span class="live-dot"></span><span>PENGUNDUH MEDIA</span><b>V1</b></div>
+        <h1>Unduh media dengan mudah.<br><em>Semua kebutuhan di satu tempat.</em></h1>
+        <p class="hero-copy">Pilih platform, tempel tautan, lalu pilih media yang ingin kamu simpan.</p>
+        <div class="hero-actions"><a href="#workspace" class="hero-btn primary">MULAI <span>↓</span></a><a href="#supported" class="hero-btn ghost">LIHAT PLATFORM <span>↗</span></a></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-card hero-card-back"><span>01</span><b>TEMPEL</b></div>
+        <div class="hero-card hero-card-mid"><span>02</span><b>PRATINJAU</b></div>
+        <div class="hero-card hero-card-front"><span class="mini-wave">◒</span><b>UNDUH</b><small>CEPAT DAN RAPI</small></div>
+      </div>
+    </section>
+
+    <section class="workspace" id="workspace">
+      <div class="section-head">
+        <div><span class="section-kicker">01 / PLATFORM</span><h2>Pilih platform</h2></div>
+        <span class="step-note"><b>01</b> PLATFORM <i></i> <b>02</b> TAUTAN <i></i> <b>03</b> HASIL</span>
+      </div>
+
+      <div class="platform-grid" id="platformGrid">
+        <button class="platform-card" data-platform="tiktok"><span class="platform-icon">♪</span><span class="platform-copy"><b>TikTok</b><small>Video · Foto · Musik</small></span><strong>01</strong></button>
+        <button class="platform-card" data-platform="instagram"><span class="platform-icon">◎</span><span class="platform-copy"><b>Instagram</b><small>Reels · Foto · Album</small></span><strong>02</strong></button>
+        <button class="platform-card" data-platform="pinterest"><span class="platform-icon">P</span><span class="platform-copy"><b>Pinterest</b><small>Foto · Video</small></span><strong>03</strong></button>
+        <button class="platform-card" data-platform="mediafire"><span class="platform-icon">↧</span><span class="platform-copy"><b>MediaFire</b><small>File langsung</small></span><strong>04</strong></button>
+        <button class="platform-card" data-platform="youtube"><span class="platform-icon">▶</span><span class="platform-copy"><b>YouTube</b><small>Video · MP3</small></span><strong>05</strong></button>
+      </div>
+
+      <div class="selected-wrap hidden" id="selectedWrap">
+        <button class="selected-platform" id="changePlatform">
+          <span class="selected-icon" id="selectedIcon">◎</span><span><small>PLATFORM PILIHAN</small><b id="selectedName">Instagram</b></span><span class="change">GANTI PLATFORM <i>↗</i></span>
+        </button>
+      </div>
+
+      <div class="input-card hidden" id="inputCard">
+        <div class="section-head compact"><div><span class="section-kicker">02 / TAUTAN</span><h2>Tempel tautan</h2></div><span id="statusText" class="status idle"><i></i >SIAP</span></div>
+        <div class="url-row">
+          <div class="url-field"><span class="link-mark">↗</span><input id="urlInput" inputmode="url" autocomplete="off" spellcheck="false" placeholder="Tempel tautan di sini..." /><button id="clearBtn" aria-label="Hapus tautan">×</button></div>
+          <button class="process-btn" id="processBtn"><span >PROSES</span><b>→</b></button>
+        </div>
+        <div class="format-row" id="formatRow">
+          <span class="format-label">HASIL</span><button class="format active" data-type="video">VIDEO</button><button class="format" data-type="audio">AUDIO</button><button class="format" data-type="image">IMAGE</button><button class="format" data-type="file">FILE</button>
+        </div>
+        <div class="input-foot"><span>TAUTAN PUBLIK</span><span>HTTPS</span><span>PRATINJAU CEPAT</span></div>
+      </div>
+
+      <div class="helper-note"><span>i</span><p>Gunakan konten publik yang kamu punya hak untuk mengunduh atau gunakan kembali.</p></div>
+    </section>
+
+    <section class="supported" id="supported">
+      <div class="section-head"><div><span class="section-kicker">02 / PLATFORM</span><h2>Platform yang tersedia</h2></div><span class="micro-note">PILIH, PRATINJAU, LALU UNDUH</span></div>
+      <div class="support-list"><span><i>♪</i>TIKTOK</span><span><i>◎</i>INSTAGRAM</span><span><i>P</i>PINTEREST</span><span><i>↧</i>MEDIAFIRE</span><span><i>▶</i>YOUTUBE</span></div>
+    </section>
+
+    <section class="telegram-section" id="telegram">
+      <div class="telegram-card">
+        <div class="telegram-orbit"></div>
+        <div class="telegram-copy"><span class="section-kicker">03 / KOMUNITAS</span><h2>Tetap terhubung dengan Felicia.</h2><p>Info terbaru dan bantuan Felicia tersedia di Telegram.</p></div>
+        <a class="telegram-cta" href="https://t.me/mommykamu" target="_blank" rel="noopener"><span class="telegram-logo">✈</span><span><small>TELEGRAM RESMI</small><b>@mommykamu</b></span><strong>↗</strong></a>
+      </div>
+    </section>
+
+    <section class="history-section" id="history">
+      <div class="section-head"><div><span class="section-kicker">04 / PERANGKAT</span><h2>Riwayat unduhan</h2></div><button class="text-btn" id="clearHistory">HAPUS SEMUA <span>×</span></button></div>
+      <div id="historyList" class="history-list"><div class="empty-history"><span>◌</span><p>Belum ada riwayat unduhan.</p></div></div>
+    </section>
+  </main>
+
+  <footer><span><b>AIO</b> FELICIA</span><span>MEDIA DOWNLOADER · 2026</span></footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="drawer" id="drawer"><div class="drawer-top"><b><em>AIO</em> FELICIA</b><button id="closeDrawer">×</button></div><span class="drawer-label">MENU</span><a href="#downloader">Unduh <span>01</span></a><a href="#supported">Platform <span>02</span></a><a href="#telegram">Telegram <span>03</span></a><a href="#history">Riwayat <span>04</span></a></aside>
+
+  <div class="modal-backdrop hidden" id="modalBackdrop">
+    <section class="result-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head"><div><span class="section-kicker">03 / HASIL</span><h2 id="modalTitle">Hasil media</h2><p id="modalMeta"></p></div><button id="closeModal" class="close-modal" aria-label="Tutup">×</button></div>
+      <div class="preview-shell" id="previewShell"><div class="preview" id="preview"></div><div class="preview-info" id="previewInfo"></div></div>
+      <div class="result-toolbar"><span id="resultCount">0 PILIHAN</span><span>PILIH MEDIA YANG INGIN DIUNDUH</span></div>
+      <div id="mediaList" class="media-list"></div>
+    </section>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
